@@ -1,0 +1,129 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  background: #444;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 1rem;
+}
+
+#hero h2 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+section p {
+  margin-bottom: 1rem; /* adds space after each paragraph */
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.project-card {
+  display: block;               /* makes the whole card clickable */
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  color: inherit;               /* inherit text color */
+  text-decoration: none;        /* remove underline */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* About Section Layout */
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap; /* makes it stack on small screens */
+}
+
+.about-img {
+  width: 250px;        /* adjust size as you like */
+  height: auto;        /* keep natural proportions */
+  object-fit: cover;   /* crops nicely if the image is larger */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 8px;  /* optional: slightly rounded corners, delete if you want sharp edges */
+}
+
+.about-text {
+  flex: 1; /* take remaining space */
+  min-width: 250px;
+}
