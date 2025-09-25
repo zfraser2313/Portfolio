@@ -12,6 +12,12 @@ body {
   color: #333;
 }
 
+ul {
+  list-style-position: inside; /* moves bullets inside the content box */
+  padding-left: 0;             /* remove extra indentation */
+  margin-left: 0;              /* remove default margin */
+}
+
 /* Navigation */
 header {
   background: #333;
@@ -127,3 +133,4 @@ footer {
   flex: 1; /* take remaining space */
   min-width: 250px;
 }
+
